@@ -7,7 +7,7 @@ import xiaohongshu_user from './lib/xiaohongshu/user';
 
 const route = new Hono();
 
-let plugins = [bilibili_user_dynamic, bilibili_user_video, telegram_channel, weibo_user, xiaohongshu_user];
+let plugins = [xiaohongshu_user];
 
 for (let plugin of plugins) {
 	plugin.setup(route);
